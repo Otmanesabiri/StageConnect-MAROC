@@ -1,0 +1,16 @@
+{
+  "name": "stageconnect-maroc",
+  "version": "1.0.0",
+  "description": "Application connectant les étudiants marocains avec des entreprises proposant des stages",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && npm start",
+    "frontend": "cd frontend && npm start",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "react-router-bootstrap": "^0.26.3"
+  }
+}
